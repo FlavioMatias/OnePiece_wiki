@@ -1,0 +1,116 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+    color: white;
+    list-style: none;
+    transition: 1s;
+    text-decoration: none;
+}
+body
+{
+    overflow-x: hidden;
+}
+header
+{
+    background-attachment: fixed;
+    height: 100vh;
+}
+#backgroud {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -2;
+}
+
+#backgroud video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+#navbar.sobre
+{
+    background-color: #2b82c0;
+}
+#navbar.sobre ol a
+{
+    color: rgb(244, 244, 244);
+
+}
+
+#navbar.mapa
+{
+    background-color: #e17f08;
+}
+
+header #navbar
+{
+    z-index: 1000;
+    font-size: 1.5em;
+    position: fixed;
+    display: inline-flex;
+    padding: 10px 2em;
+    justify-content: space-between;
+    width: 100vw;
+}
+header h1
+{
+    padding-left: 1em;
+}
+header nav ol
+{
+    padding: 20px 0;
+    display: inline-flex;
+    gap: 1em;
+    padding-right: 5em;
+}
+
+/* --------------------------------------------------- MAIN ---------------------------------------------------- */
+
+main
+{
+    background-color: azure;
+    height: 1000em;
+}
+main .sobre 
+{
+    height: 90vh;
+    background-color: #4152bd;
+    padding: 2em;
+}
+main .sobre img
+{
+    right: 5vw;
+    position: absolute;
+    width: 35em;
+    height: auto;
+    transform: scaleX(-1);
+    animation: flutuar 2s ease-in-out infinite
+}
+
+@keyframes flutuar {
+    0% {
+        transform: translateY(0); /* Posição original */
+    }
+    50% {
+        transform: translateY(-15px); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição original */
+    }
+}
+.card
+{
+    border-radius: 10px;
+    margin: 2em 2em;
+    height: 70vh;
+    width: 65vw;
+    background-color: rgb(33, 33, 33);
+    z-index: 1001;
+}
+/* main .sobre .card */
