@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,48 @@
     <link rel="stylesheet" href="Styles/fonte.css">
     <link rel="stylesheet" href="Styles/home.css">
 </head>
+
 <body>
     <header>
         <nav id="navbar">
-            <h1><img src="Images/iconhome.png" alt=""></h1>
+            <h1><a href="index.html"><img src="Images/iconhome.png" alt=""></a></h1>
             <ol>
                 <li><a href="">Home</a></li>
-                <li><a href="">Personagens</a></li>
-                <li><a href="">Frutas</a></li>
-                <li><a href="">Contatos</a></li>
+                <li><a href="Pages/personagens.html">Characters</a></li>
+                <li><a href="">Fruits</a></li>
+                <li><a href="">Contacts</a></li>
+
             </ol>
+
+            <input type="search" id="search" name="query" placeholder="Pesquisar...">
+            <img class="search" src="Images/lupa.png" alt="">
+
         </nav>
-        <div id="backgroud">
+        <div id="background">
             <video src="Videos/backgroud_init.mp4" autoplay muted loop disablePictureInPicture></video>
         </div>
-        
+
     </header>
     <main>
         <section class="sobre">
-            <img src="Images/luffy_gear5.png" alt="luffy_gear5">
+            <img class="luffy" src="Images/luffy_gear5.png" alt="luffy_gear5">
+            <div class="card">
+                <h2>One Piece</h2>
+                <p>One Piece is an anime and manga created by Eiichiro Oda that follows the adventures of Monkey D.
+                    Luffy, a young pirate who dreams of becoming the King of the Pirates. He possesses the power of the
+                    Devil Fruit Gomu Gomu no Mi, which transforms his body into rubber, allowing for unique abilities.
+                    Throughout his journey across the Grand Line, Luffy forms the Straw Hat Pirates crew, which includes
+                    friends like the swordsman Zoro and the navigator Nami. Together, they face various enemies,
+                    including other pirates and the Navy, in search of the legendary treasure One Piece. The series
+                    explores themes of freedom, friendship, and the fight against injustice, while building a richly
+                    detailed world filled with captivating characters, making it one of the most successful franchises
+                    in history, with a strong cultural impact and numerous adaptations, such as films and games.</p>
+
+
+            </div>
+        </section>
+
+        <section class="mapa">
             <div class="card">
 
             </div>
@@ -36,7 +60,9 @@
     <footer>
 
     </footer>
-    <script src="Scripts/header.js"></script>
-    
+
+    <script src="Scripts/navbar.js"></script>
+
 </body>
+
 </html>
